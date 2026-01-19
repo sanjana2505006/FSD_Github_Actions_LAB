@@ -35,4 +35,36 @@ jobs:
         - name: Checkout latest code 
           uses: actions/checkout@v2
 
+  build test2:
+      name: Build test and deploy 
+      runs-on: ubuntu@latest 
+
+      steps: 
+        - name: Run lint 
+          run: npm run lint
+
+  build test3:
+      name: Build test and deploy 
+      runs-on: ubuntu@latest 
+
+      steps: 
+        - name: Run buid 
+          run: npm run build 
+
+  build test4: 
+      name: Build test and deploy 
+      runs-on: ubuntu@latest 
+
+      steps: 
+        - name: Run tests 
+          run: npm test
+
+  build test5:
+      name: Build test and deploy 
+      runs-on: ubuntu@latest    
+
+      steps: 
+        - name: Run deploy
+          run: npm run deploy
+
         
